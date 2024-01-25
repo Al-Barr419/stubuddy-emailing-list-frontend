@@ -16,7 +16,7 @@ function MailingForm() {
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
         axios
-          .post(`${process.env.BACKEND_URL}/add-contact`, {
+          .post(`${process.env.REACT_APP_BACKEND_URL}/add-contact`, {
             email: values.email,
             first_name: values.first_name,
             last_name: values.last_name,
